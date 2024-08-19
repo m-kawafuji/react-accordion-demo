@@ -1,0 +1,30 @@
+.container {
+  border: 1px solid #000;
+}
+
+.trigger {
+  width: 100%;
+  padding: 1rem;
+  background-color: #eee;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.panelWrapper {
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition-property: max-height, visibility;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in;
+
+  &.isExpanded {
+    max-height: 400px;
+    visibility: visible;
+    transition-timing-function: ease-out;
+  }
+}
+
+.panelInner {
+  padding: 1rem;
+}

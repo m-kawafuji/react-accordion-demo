@@ -1,94 +1,139 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionPanel,
+} from '@/components/Accordion';
+import styles from './page.module.scss';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main>
+      <div className={styles.container}>
+        <section className={styles.inner}>
+          <h1 className={styles.title}>React Accordion Demo</h1>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <div className={styles.accordions}>
+            <Accordion>
+              <AccordionHeader>Accordion 1</AccordionHeader>
+              <AccordionPanel>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+              </AccordionPanel>
+            </Accordion>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+            <Accordion>
+              <AccordionHeader>Accordion 2</AccordionHeader>
+              <AccordionPanel>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+              </AccordionPanel>
+            </Accordion>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+            <Accordion>
+              <AccordionHeader>Accordion 3</AccordionHeader>
+              <AccordionPanel>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+              </AccordionPanel>
+            </Accordion>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+            <Accordion>
+              <AccordionHeader>Accordion 4</AccordionHeader>
+              <AccordionPanel>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto similique accusantium blanditiis ratione obcaecati
+                  quae, laboriosam culpa praesentium minima aliquam cumque earum
+                  fugiat porro maxime! Illo inventore earum obcaecati deserunt?
+                </p>
+              </AccordionPanel>
+            </Accordion>
+          </div>
+        </section>
       </div>
     </main>
   );
