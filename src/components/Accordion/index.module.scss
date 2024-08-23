@@ -18,7 +18,7 @@
   transition-duration: 0.25s;
   transition-timing-function: ease-in;
 
-  &.isExpanded {
+  &[data-expanded='true'] {
     max-height: 400px;
     visibility: visible;
     transition-timing-function: ease-out;

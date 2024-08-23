@@ -1,6 +1,5 @@
 'use client';
 
-import clsx from 'clsx';
 import { createContext, useContext, useId, useState } from 'react';
 import styles from './index.module.scss';
 
@@ -79,10 +78,11 @@ export function AccordionPanel({ children }: AccordionPanelProps) {
 
   return (
     <div
-      className={clsx(styles.panelWrapper, isExpanded && styles.isExpanded)}
+      className={styles.panelWrapper}
       id={id + 'panel'}
       role="region"
       aria-labelledby={id + 'trigger'}
+      data-expanded={isExpanded}
     >
       <div className={styles.panelInner}>{children}</div>
     </div>
